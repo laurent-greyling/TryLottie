@@ -1,5 +1,5 @@
 ﻿using System;
-
+using TryLottie.Views;
 using Xamarin.Forms;
 
 namespace TryLottie
@@ -11,9 +11,9 @@ namespace TryLottie
             InitializeComponent();
 
             if (Device.RuntimePlatform == Device.iOS)
-                MainPage = new MainPage();
+                MainPage = new AnimationView();
             else
-                MainPage = new NavigationPage(new MainPage());
+                MainPage = new NavigationPage(new AnimationView());
         }
     }
 }

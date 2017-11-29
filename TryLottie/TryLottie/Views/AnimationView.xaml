@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TryLottie.Views.AnimationView"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <Button Clicked="Play_Heart" Text="Play Animation" FontSize="Medium"/>
+            <Button Clicked="Stop_Heart" Text="Stop Animation" FontSize="Medium"/>
+            <forms:AnimationView 
+                x:Name="AnimationViews" 
+                Animation="animation-w34-h34.json" 
+                AutoPlay="False" Loop="False"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"
+                IsVisible="False"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
